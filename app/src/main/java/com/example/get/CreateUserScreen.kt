@@ -33,9 +33,9 @@ fun CreateUserScreen(userViewModel: UserViewModel = viewModel()) {
             Log.d("CreateUserScreen", "Phone: $phone ID: $countryId")
             if (phone.isNotEmpty() && countryId.isNotEmpty()) {
                 userViewModel.createUser2(phone, countryId)
-                Log.d("CreateUserScreen", "API call")
+                Log.d("CreateUserScreens", "API call")
             } else {
-                Log.d("CreateUserScreen", "Phone or Country ID is empty!")
+                Log.d("CreateUserScreens", "Phone or Country ID is empty!")
             }
         })
         {
